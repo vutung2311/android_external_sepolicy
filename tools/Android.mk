@@ -5,7 +5,7 @@ include $(CLEAR_VARS)
 LOCAL_MODULE := checkseapp
 LOCAL_MODULE_TAGS := optional
 LOCAL_C_INCLUDES := external/libsepol/include/
-LOCAL_CFLAGS := -DLINK_SEPOL_STATIC -Wall -Werror
+#LOCAL_CFLAGS := -DLINK_SEPOL_STATIC -Wall -Werror
 LOCAL_SRC_FILES := check_seapp.c
 LOCAL_STATIC_LIBRARIES := libsepol
 
@@ -18,7 +18,7 @@ LOCAL_MODULE := checkfc
 LOCAL_MODULE_TAGS := optional
 LOCAL_C_INCLUDES := external/libsepol/include \
                     external/libselinux/include
-LOCAL_CFLAGS := -Wall -Werror
+#LOCAL_CFLAGS := -Wall -Werror
 LOCAL_SRC_FILES := checkfc.c
 LOCAL_STATIC_LIBRARIES := libsepol libselinux
 
@@ -40,7 +40,7 @@ include $(CLEAR_VARS)
 LOCAL_MODULE := sepolicy-check
 LOCAL_MODULE_TAGS := optional
 LOCAL_C_INCLUDES := external/libsepol/include
-LOCAL_CFLAGS := -Wall -Werror
+#LOCAL_CFLAGS := -Wall -Werror
 LOCAL_SRC_FILES := sepolicy-check.c
 LOCAL_STATIC_LIBRARIES := libsepol
 
